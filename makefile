@@ -9,3 +9,5 @@ test-all:
 install:
 	pip install PyHamcrest
 	pip install coverage
+	pip install sympy
+	pip install pyasn1 pyasn1-modules
