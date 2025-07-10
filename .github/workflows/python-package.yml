@@ -45,3 +45,12 @@ jobs:
         name: coverage-report
         path: output/coverage_report
         overwrite: true
+
+  docker-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build and run in Docker
+        run: |
+          docker build -t embedded-crypto
+          docker run --rm embedded-crypto
