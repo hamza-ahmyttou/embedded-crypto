@@ -1,4 +1,4 @@
-# Cryptography Lab — Discrete Logarithms & Diffie-Hellman
+# Embedded Cryptography — Discrete Logarithms & Diffie-Hellman
 
 This project implements fundamental algorithms in computational number theory and cryptography, including:
 
