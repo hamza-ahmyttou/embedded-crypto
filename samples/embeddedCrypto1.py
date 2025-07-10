@@ -111,7 +111,7 @@ class SubGroup(Group):
 		
 	def testDiffieHellman(self):
 		a = randbelow(self.N + 1)
-		b = int((random() * 1000) % (self.N + 1))
+		b = randbelow(self.N + 1)
 		A = self.exp(self.g, a)
 		B = self.exp(self.g, b)
 		if (self.exp(A, b) == self.exp(B, a)):
