@@ -1,6 +1,7 @@
 from sympy.ntheory import factorint
 from sympy.ntheory.modular import crt
 from random import *
+from secrets import randbelow
 
 from pyasn1.type import univ, namedtype
 from pyasn1.codec.der.decoder import decode
@@ -109,7 +110,7 @@ class SubGroup(Group):
 		return i
 		
 	def testDiffieHellman(self):
-		a = int((random() * 1000) % (self.N + 1))
+		a = randbelow(self.N + 1)
 		b = int((random() * 1000) % (self.N + 1))
 		A = self.exp(self.g, a)
 		B = self.exp(self.g, b)
