@@ -52,5 +52,6 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build and run in Docker
         run: |
+          docker run --rm embedded-crypto pytest
           docker build -t embedded-crypto .
           docker run --rm embedded-crypto
