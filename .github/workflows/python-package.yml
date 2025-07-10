@@ -53,4 +53,4 @@ jobs:
       - name: Build and run in Docker
         run: |
           docker build -t embedded-crypto .
-          docker run --rm embedded-crypto pytest
+          docker run --rm embedded-crypto pytest -v
