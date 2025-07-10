@@ -3,7 +3,7 @@ from samples.embeddedCrypto1 import *
 from hamcrest import *
 from random import *
 
-class test1(unittest.TestCase):
+class test_1(unittest.TestCase):
 
 	def __assert_constructor(self, l, e):
 		any_N=-1
