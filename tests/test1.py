@@ -90,7 +90,7 @@ class test1(unittest.TestCase):
 	def testLab1_part2(self):
 		subZ23 = SubGroup("ZpAdditive", 0, 23, 23, 5)
 		assert(subZ23.testDiffieHellman())
-		assert(subZ23.DiffieHellman,(5, 6, 2, 7, 12))
+		assert(subZ23.DiffieHellman(5, 6, 2, 7, 12))
 		subZ257 = SubGroup("ZpAdditive", 0, 33, 257, 256)
 		assert(subZ257.testDiffieHellman())
 		(p, g, N) = retrieve()
