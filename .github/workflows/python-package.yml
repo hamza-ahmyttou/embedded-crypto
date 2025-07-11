@@ -39,6 +39,15 @@ jobs:
       run: |
         make test-all
 
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v4
+      with:
+        token: e6994bf3-07d9-4339-af00-db0f3e535056
+        files: output/.coverage
+        flags: unittests
+        name: codecov-coverage
+
+
     - name: Upload coverage report
       uses: actions/upload-artifact@v4
       with:
