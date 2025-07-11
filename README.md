@@ -28,3 +28,5 @@ This project implements fundamental algorithms in computational number theory an
 ├── tests/
 │   └── lab1_test.py         # Unit tests
 └── makefile                 # The Makefile
+```
+[![codecov](https://codecov.io/github/hamza-ahmyttou/embedded-crypto//branch/main/graph/badge.svg)](https://codecov.io/github/hamza-ahmyttou/embedded-crypto)
